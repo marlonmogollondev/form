@@ -19,64 +19,84 @@
 <body>
     <div class="form-box">
 
-        <form action="" class="form" name="Form-Sport" type="POST" enctype="multipart/formdata">
+        <form action="https://formsubmit.co/emilyjimenez1919@gmail.com" method="POST" class="form" name="Form-Sport" type="POST" enctype="multipart/formdata">
+            
 
             <div class="banner">
                 <h1>aqui va el baner!!!!</h1>
             </div>
-
-            <table>
                 <div class="content">
                     <div class="form-section">
                         <label>Nombre y Apellido</label><br>
-                        <input type="text" name="Name" placeholder="Ej; Andres Urdaneta" required autocomplete="off">
+                        <input type="text" name="Name" placeholder="Ej: Andres Urdaneta" required autocomplete="off">
                     </div>
+
                     <div class="form-section">
-                        <label>Fecha de Nacimiento</label><br>
+                        <label>Documento de Identidad</label><br>
+                        <input type="number" name="Name" placeholder="Ej: 12.544.282" required autocomplete="off">
+                    </div>
+
+                    <div class="form-section">
+                        <label>F. de Nacimiento</label><br>
                         <input type="date" name="Birthdate" required>
                     </div>
+
                     <div class="form-section">
                         <label>Sexo</label><br>
-                        <input type="radio" name="Sexo" required><span>Hombre</span>
+                        <input type="radio" name="Sexo" required><span>Hombre</span><br>
                         <input type="radio" name="Sexo" required><span>Mujer</span>
                     </div>
+
                     <div class="form-section">
                         <label>Numero de Telefono</label><br>
-                        <input type="number" name="Phone" required autocomplete="off">
+                        <input type="number" name="Phone" required autocomplete="off" placeholder="Ej: +58 4169696622">
                     </div>
+
                     <div class="form-section">
                         <label>Direccion de Correo Electronico</label><br>
-                        <input type="text" name="Email" required="" autocomplete="off">
+                        <input type="text" name="Email" required="" autocomplete="off" placeholder="Ej: example@gmail.com">
                     </div>
+
                     <div class="form-section">
                         <label>Direccion</label><br>
-                        <input type="text" name="Nombre" required="" autocomplete="off">
+                        <input type="text" name="Nombre" required="" autocomplete="off" placeholder="Santa Lucia">
                     </div>
+
                     <div class="form-section">
                         <label>Talla de Camiseta</label><br>
-                        <input type="radio" name="shirt size" required><span>S</span>
-                        <input type="radio" name="shirt size" required><span>M</span>
-                        <input type="radio" name="shirt size" required><span>L</span>
+                        <input type="radio" name="shirt size" required><span>S</span><br>
+                        <input type="radio" name="shirt size" required><span>M</span><br>
+                        <input type="radio" name="shirt size" required><span>L</span><br>
                         <input type="radio" name="shirt size" required><span>XL</span>
                     </div>
+
                     <div class="form-section">
                         <label>Metodo de Pago</label><br>
-                        <input type="radio" name="pay" required="" autocomplete="off"><span>Efectivo</span>
-                        <input type="radio" name="pay" required="" autocomplete="off"><span>Trasferencia Bancaria</span>
+                        <input type="radio" name="pay" required="" autocomplete="off"><span>Efectivo</span><br>
+                        <input type="radio" name="pay" required="" autocomplete="off"><span>Trasferencia Bancaria</span><br>
                         <input type="radio" name="pay" required="" autocomplete="off"><span>Transferencia Zelle</span>
                     </div>
+
                     <div class="form-section">
                         <label>Numero de Referencia Bancaria</label><br>
-                        <input type="text" id="Bank reference" required="" autocomplete="off">
+                        <input type="text" id="Bank reference" required="" autocomplete="off" placeholder="Ej: f3ef672a">
                     </div>
+                    
                     <div class="form-section">
                         <label>Comprobante de pago</label>
                         <h5>Porfavor añada el archivo de comprobante de pago.</h5><br>
                         <input type="file" name="Proof Of Payment" required="" autocomplete="off">
                     </div>
+
+                    <div class="form-section">
+                        <label>Nota: (opcional).</label><br>
+                        <textarea placeholder="Añada alguna nota, sugerencia o peticion opcional que desee enviarnos" name="textarea" id="" cols="50" rows="5"></textarea>
+                    </div>
                 </div>
-            </table>
+            
             <button type="submit">Enviar</button>
+
+            <input type="hidden" name="_next" value="https://marlonmogollondev.github.io/form/">
         </form>
     </div>
 </body>

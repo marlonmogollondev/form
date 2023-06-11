@@ -9,8 +9,15 @@
     display: none;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 body{
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,8 +28,8 @@ body{
 }
 
 .form-box{
-    margin: 2rem;
-    width: 35rem;
+    margin: 2.5rem;
+    width: 30rem;
     background-color: transparent;
     backdrop-filter: blur(15px);
     border: 2px solid #c1c1c1;
@@ -38,7 +45,6 @@ body{
 }
 
 .banner{
-    background-color: tomato;
     color: white;
     text-transform: uppercase;
     padding: 10px;
@@ -56,7 +62,6 @@ body{
     height: auto;
     background-color: transparent;
     border-bottom: 2px solid #c1c1c1;
-    padding: 5px;
 }
 
 .form-section label{
@@ -67,10 +72,19 @@ body{
     background-color: transparent;
     outline: none;
     border: 0;
-    width: 100%;
+    width: auto;
 }
 
-input::placeholder{
+input::placeholder, textarea::placeholder{
     font-weight: 600;
-    color: white;
+    color: #212121;
+}
+
+textarea{
+    background-color: rgba(100, 100, 100, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    color: black;
+    outline: none;
 }
